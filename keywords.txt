@@ -1,0 +1,26 @@
+pv_rhino_t	KEYWORD1
+
+pv_audio_rec_get_new_buffer	KEYWORD2
+pv_get_uuid	KEYWORD2
+pv_get_uuid_size	KEYWORD2
+pv_rhino_delete	KEYWORD2
+pv_rhino_frame_length	KEYWORD2
+pv_rhino_is_understood	KEYWORD2
+pv_rhino_get_intent	KEYWORD2
+pv_rhino_free_slots_and_values	KEYWORD2
+pv_rhino_context_info	KEYWORD2
+pv_rhino_reset	KEYWORD2
+pv_rhino_init	KEYWORD2
+pv_rhino_process	KEYWORD2
+pv_rhino_version	KEYWORD2
+pv_sample_rate	KEYWORD2
+pv_status_to_string	KEYWORD2
+pv_get_error_stack KEYWORD2
+
+PV_STATUS_SUCCESS	LITERAL1
+PV_STATUS_OUT_OF_MEMORY	LITERAL1
+PV_STATUS_IO_ERROR	LITERAL1
+PV_STATUS_INVALID_ARGUMENT	LITERAL1
+PV_STATUS_STOP_ITERATION	LITERAL1
+PV_STATUS_KEY_ERROR	LITERAL1
+PV_STATUS_INVALID_STATE	LITERAL1
