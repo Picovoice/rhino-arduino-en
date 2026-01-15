@@ -15,6 +15,9 @@
 #include "PDM.h"
 #include "picovoice.h"
 
+namespace picovoice {
+namespace rhino {
+
 #define PV_AUDIO_REC_AUDIO_FREQUENCY (16000U)
 #define PV_AUDIO_REC_CHANNEL_NUMBER (1)
 #define PV_AUDIO_REC_RECORD_BUFFER_SIZE (512)
@@ -83,3 +86,6 @@ const int16_t *pv_audio_rec_get_new_buffer(void) {
 void pv_audio_rec_deinit(void) {
     PDM.end();
 }
+
+} // namespace rhino
+} // namespace picovoice

@@ -94,8 +94,8 @@ if (status != PV_STATUS_SUCCESS) {
 
 Rhino accepts single channel, 16-bit PCM audio. The sample rate can be retrieved using `pv_sample_rate()`. Rhino accepts input audio in consecutive chunks (aka frames); the length of each frame can be retrieved using `pv_rhino_frame_length()`. Inside the `loop()` function in the sketch, pass the recorded audio to the Rhino engine:
 
-```c
-const int16_t *pcm = pv_audio_rec_get_new_buffer()
+```cpp
+const int16_t *pcm = picovoice::rhino::pv_audio_rec_get_new_buffer()
 bool is_finalized = false;
 pv_status_t status = pv_rhino_process(handle, pcm, &is_finalized);
 if (status != PV_STATUS_SUCCESS) {

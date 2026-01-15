@@ -9,10 +9,13 @@
     specific language governing permissions and limitations under the License.
 */
 
-#ifndef PV_AUDIO_REC_H
-#define PV_AUDIO_REC_H
+#ifndef PV_RHINO_AUDIO_REC_H
+#define PV_RHINO_AUDIO_REC_H
 
 #include "picovoice.h"
+
+namespace picovoice {
+namespace rhino {
 
 /**
  * Initialize audio recording
@@ -34,5 +37,8 @@ const int16_t *pv_audio_rec_get_new_buffer(void);
  */
 void pv_audio_rec_deinit(void);
 
-#endif // PV_AUDIO_REC_H
+} // namespace rhino
+} // namespace picovoice
+
+#endif // PV_RHINO_AUDIO_REC_H
 

@@ -66,7 +66,7 @@ void setup() {
     Serial.begin(9600);
     while (!Serial);
 
-    pv_status_t status = pv_audio_rec_init();
+    pv_status_t status = picovoice::rhino::pv_audio_rec_init();
     if (status != PV_STATUS_SUCCESS) {
         Serial.print("Audio init failed with ");
         Serial.println(pv_status_to_string(status));
@@ -105,7 +105,7 @@ void setup() {
 }
 
 void loop() {
-    const int16_t *buffer = pv_audio_rec_get_new_buffer();
+    const int16_t *buffer = picovoice::rhino::pv_audio_rec_get_new_buffer();
     if (buffer) {
         bool is_finalized = false;
         pv_status_t status = pv_rhino_process(handle, buffer, &is_finalized);
