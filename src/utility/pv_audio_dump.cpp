@@ -14,6 +14,9 @@
 
 #include "LibPrintf.h"
 
+namespace picovoice {
+namespace rhino {
+
 #define pv_min(a,b) ((a) < (b) ? (a) : (b))
 
 #define PV_AUDIO_DUMP_DURATION_SEC      (3)
@@ -47,3 +50,6 @@ void pv_audio_dump_start(void) {
     }
     pv_audio_dump_reset_buffer();
 }
+
+} // namespace rhino
+} // namespace picovoice

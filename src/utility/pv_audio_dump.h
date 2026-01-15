@@ -9,12 +9,18 @@
     specific language governing permissions and limitations under the License.
 */
 
-#ifndef PV_AUDIO_DUMP_H
-#define PV_AUDIO_DUMP_H
+#ifndef PV_RHINO_AUDIO_DUMP_H
+#define PV_RHINO_AUDIO_DUMP_H
+
+namespace picovoice {
+namespace rhino {
 
 void pv_audio_dump_init(void);
 bool pv_audio_dump_add(const int16_t *buffer, uint32_t buffer_size);
 void pv_audio_dump_start(void);
 void pv_audio_dump_reset_buffer(void);
 
-#endif // PV_AUDIO_DUMP_H
+} // namespace rhino
+} // namespace picovoice
+
+#endif // PV_RHINO_AUDIO_DUMP_H
